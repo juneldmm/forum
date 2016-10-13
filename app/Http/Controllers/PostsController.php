@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use DB;
 use App\Discussion;
 use App\Markdown\Markdown;
 use Illuminate\Http\Request;
@@ -19,15 +19,17 @@ class PostsController extends Controller
     }
 
     public function index(){
-        $discussions=Discussion::latest()->get();
+        $discussions=Discussion::latest()->paginate(10);
         return view('forum.index',compact('discussions'));
     }
+
+
 
     public function show($id){
         $discussion=Discussion::findOrFail($id);
 
-        $html=$this->markdown->markdown($discussion->body);
-       // $html=$discussion->body;
+        //  $html=$this->markdown->markdown($discussion->body);
+      $html=$discussion->body;
         return view('forum.show',compact('discussion','html'));
     }
 

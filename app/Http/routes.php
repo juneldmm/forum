@@ -22,4 +22,9 @@ Route::post('/crop/api', 'UsersController@cropAvatar');
 Route::post('/post/upload', 'PostsController@upload');
 Route::get('/pay','OrdersController@pay');
 Route::get('/pay/success','OrdersController@paySuccess');
+//Route::get('/pro',function(){
+//   $billings = app('billing');
+//    dd($billings->charge());
+//});
+Route::any('/wechat', 'WechatController@serve');
 

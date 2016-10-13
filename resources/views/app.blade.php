@@ -6,11 +6,10 @@
     <link href="/css/style.css" rel="stylesheet" type="text/css">
     <link href="/css/font-awesome.css" rel="stylesheet">
     <link href="/css/jquery.Jcrop.css" rel="stylesheet">
-
+    <link href="/css/footor.css" rel="stylesheet">
     <script src="/js/vue.js"></script>
     <script src="/js/vue-resource.min.js"></script>
     <script src="/js/jquery-2.1.4.min.js" ></script>
-    <script src="/js/jquery.form.js"></script>
     <script src="/js/jquery.form.js"></script>
     <script src="/js/jquery.Jcrop.min.js"></script>
     <script src="/js/bootstrap.min.js" ></script>
@@ -54,9 +53,43 @@
         </div><!--/.nav-collapse -->
     </div>
 </nav>
+
+
 @yield('content')
 
+<script>
+    $(document).ready(function(){
+        $("#top_btn").click(function(){if(scroll=="off") return;$("html,body").animate({scrollTop: 0}, 600);});
+    });
+</script>
+<div id="leftsead">
+            <a id="top_btn">
+                <div class="hides" style="width:161px;display:none">
+                    <img src="/uploads/ll06.png" width="161" height="49" />
+                </div>
+                <img src="/uploads/l06.png" width="47" height="49" class="shows" />
+            </a>
 
+</div>
 
+<div class="container">
+    <div class="footer_m">
+        <div class="inner-footer_m">
+            <div class="links z m">
+                  <p class="text-center">
+                      <a href="http://blog.sina.com.cn/u/2347568907" target="_blank">关于我们</a>
+                      <a href="http://blog.sina.com.cn/u/2347568907" target="_blank">联系我们</a>
+                      <a href="http://blog.sina.com.cn/u/2347568907" target="_blank">友情链接</a>
+                      <a class="copyright">Maggie && Leacent</a>
+                      <span>
+                          Powered by <a target="_blank" href="http://www.discuz.net/">laravel!</a> X3
+                      </span>
+                  </p>
+            </div>
+
+        </div>
+
+    </div>
+</div>
 </body>
 </html>

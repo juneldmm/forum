@@ -1,0 +1,27 @@
+
+.footer {
+    height: 60px;
+}
+.inner-footer {
+    position: relative;
+    height: 60px;
+    border: 1px solid #f4f5f9;
+    background: #EDEFF4;
+    padding: 0 30px;
+}
+.links {
+    padding: 10px;
+}
+.showmenu_outer {
+    line-height: 24px;
+    display: inline-block;
+    width: 110px;
+    height: 24px;
+    margin-right: 8px;
+    border: 1px solid #D1D1D1;
+    border-radius: 4px;
+    vertical-align: middle;
+}
+.y {
+    float: right;
+}

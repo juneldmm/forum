@@ -12,7 +12,9 @@
         "laravelcollective/html":"~5.0",
         "intervention/image": "^2.3",
         "yuanchao/laravel-5-markdown-editor": "dev-master",
-        "pingplusplus/pingpp-php": "dev-master"
+        "pingplusplus/pingpp-php": "dev-master",
+        "overtrue/laravel-wechat": "~3.0",
+        "overtrue/wechat": "~3.1"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
